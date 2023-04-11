@@ -11,24 +11,25 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
-      appBar: AppBar(
-        actions: [
-          Icon(Icons.notifications),
-          SizedBox(
-            width: 10,
-          ),
-          Icon(Icons.person),
-        ],
-        backgroundColor: Color.fromRGBO(255, 183, 43, 1),
-        title: Text('곧 감'),
-        centerTitle: true,
+      body: GradientBackground(
+        gradient: LinearGradient(
+          colors: [
+            Color.fromRGBO(255, 183, 43, 1),
+            Color.fromRGBO(255, 230, 27, 1)
+          ],
+        ),
       ),
-      body: Column(
-        children: [
-          Text('프로모션'),
-        ],
-      ),
+    );
+  }
+}
+
+class GradientBackground extends StatelessWidget {
+  const GradientBackground({required this.gradient, super.key});
+  final Gradient gradient;
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: [],
     );
   }
 }
