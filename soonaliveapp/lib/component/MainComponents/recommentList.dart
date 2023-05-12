@@ -11,7 +11,7 @@ class RecommendList extends StatelessWidget {
       padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
       child: Container(
         width: 400,
-        height: 200,
+        height: 250,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(20),

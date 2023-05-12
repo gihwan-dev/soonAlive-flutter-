@@ -37,8 +37,13 @@ class _HomeScreenState extends State<HomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Promotion(),
-            SizedBox(height: 20),
+            SizedBox(
+              height: 20,
+            ),
             CheckoutButtons(),
+            SizedBox(
+              height: 20,
+            ),
             Text('추천 음식점'),
             RecommendList(),
           ],

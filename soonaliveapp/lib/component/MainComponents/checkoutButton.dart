@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:soonalive/pages/storeList.dart';
 
 class CheckoutButtons extends StatelessWidget {
   const CheckoutButtons({super.key});
@@ -12,7 +13,12 @@ class CheckoutButtons extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           ElevatedButton(
-              onPressed: () => {},
+              onPressed: () => {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const StoreList()))
+                  },
               child: Text('예약하러가기'),
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(
